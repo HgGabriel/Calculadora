@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
+    <title>CALCULADORA</title>
     <style>
         *{
             margin: 0;
             padding: 0;
         }
         .fundo{
-            background-image: linear-gradient(45deg,black,crimson);
+            background-image: linear-gradient(45deg,rgb(255, 0, 0),rgb(116, 7, 7));
             height: 100vh;
             color: white;
             font-family: Arial, Helvetica, sans-serif;
@@ -24,8 +24,9 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
-            border-radius:15px;
+            border-radius:5px;
             padding: 15px;
+            border: solid 2px rgba(255,255,255,0.5);
         }
         .botao{
            width: 50px;
@@ -33,8 +34,9 @@
            font-size: 25px;
            cursor: pointer;
            background-color: rgb(31,31,31);
-           border: none;
+           border: solid 2px rgba(171, 171, 171, 0.5);
            color: white;
+           border-radius:5px;
            margin: 2px;
            
 
@@ -57,10 +59,10 @@
 </head>
 <body>
     <div class="fundo">
-        <h1 style="text-align: left;">Hiago Gabriel</h1>
+        <h1 style="color: rgb(255, 255, 255);">Hiago Gabriel</h1>
         <div class="calculadora">
             <h1>Calculadora</h1>
-            <p id="resultado"></p>
+            <p id="resultado" style="overflow: hidden;"></p>
             <table>
             <tr>
                 <td><button class="botao" onclick="clean()">C</button></td>
